@@ -10,7 +10,7 @@ RUN apk add --no-cache \
 
 # Set Vault and Rclone versions
 ARG VAULT_VERSION=1.17.6
-ENV RCLONE_VERSION="1.69.0"
+ARG RCLONE_VERSION="1.69.0"
 
 # Install Vault
 RUN curl -fsSL -o /tmp/vault.zip "https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_linux_amd64.zip" \
